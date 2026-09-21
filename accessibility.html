@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessibility Considerations - Sentry</title>
+<meta name="description" content="How Sentry approaches accessibility: keyboard navigation, screen reader support, color-blind-safe alerts, and WCAG-compliant contrast and text sizing.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo">
+      <img src="icons/shield.svg" alt="" width="28" height="28">
+      Sentry
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="accessibility.html" aria-current="page">Accessibility</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <h1>Accessibility Considerations</h1>
+
+    <p>Sentry is user-friendly for all users, including those who use assistive technology, since it is designed to protect users in the instant before they click anything dangerous. I'm putting accessibility into practice in several specific ways.</p>
+
+    <p>No feature will rely on a mouse because all interactive elements, such as scan buttons, alert dismissals, and settings toggles, will have clear labels and full keyboard navigation with visible focus states. Since real-time alerts are Sentry's primary feature, I'm announcing new alerts to screen reader users in real time, not only visually, by leveraging ARIA live regions.</p>
+
+    <p>To assist colorblind users, warning statuses will couple red or yellow indicators with icons and text labels (such as "Blocked" or "Suspicious"). Contrast ratios will be met by text and UI elements, and relative units will be used in the layout to ensure that text is readable even when a user raises the zoom or font size in their browser.</p>
+
+    <p>Semantic HTML (headings, landmarks, lists) will organize the page so screen readers can traverse it logically, and all images and icons will have relevant alt text.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-wrap">
+    <p>&copy; 2026 Sentry - a class project by Tushar.</p>
+    <p><a href="index.html">Home</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

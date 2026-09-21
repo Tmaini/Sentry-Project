@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Sentry</title>
+<meta name="description" content="Get in touch about the Sentry project using this simple contact form.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo">
+      <img src="icons/shield.svg" alt="" width="28" height="28">
+      Sentry
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Have feedback or questions about this project? Send a message below.</p>
+
+    <form id="contact-form" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+
+      <p class="confirm-msg" id="confirm-msg" role="status">Thanks! This is a demo form for a class project, so no message is actually sent anywhere.</p>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-wrap">
+    <p>&copy; 2026 Sentry - a class project by Tushar.</p>
+    <p><a href="accessibility.html">Accessibility</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

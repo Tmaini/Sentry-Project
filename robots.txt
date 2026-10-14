@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://tmaini.github.io/Sentry-Project/sitemap.xml
